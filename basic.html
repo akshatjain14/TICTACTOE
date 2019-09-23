@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TIC TAC TOE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center text-light"> TIC TAC TOE </h1>
+        <button class="btn btn-default btn-outline-info" class="text-center text-primary" id="play" onclick="play()" title="click to start the game"> START THE GAME</button>
+
+        <h5 class="text-center" id="turn" style="color:red; text-decoration:blink;"> X TURN :</h5>
+
+        <div class="superbox" id="S_BOX" style="pointer-events: none;">
+
+            <div class="box" id="one" onclick="myFunction(this.id)">1</div>
+            <div class="box" id="two" onclick="myFunction(this.id)">2</div>
+            <div class="box" id="three" onclick="myFunction(this.id)">3</div>
+            <div class="box" id="four" onclick="myFunction(this.id)">4</div>
+            <div class="box" id="five" onclick="myFunction(this.id)">5</div>
+            <div class="box" id="six" onclick="myFunction(this.id)">6</div>
+            <div class="box" id="seven" onclick="myFunction(this.id)">7</div>
+            <div class="box" id="eight" onclick="myFunction(this.id)">8</div>
+            <div class="box" id="nine" onclick="myFunction(this.id)">9</div>
+        </div>
+
+    </div>
+    <div id="lower">
+
+        <p id="win" class="text-center" style="color: #FFFFFF;">PLAY THE GAME </p>
+        <span class="text-center"><button class="btn  btn-outline-warning btn-sm" id="replay" style="display: none" onclick="replay()">REPLAY??</button></span>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
